@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnLaunchUri:
                 String input = etOrderId.getText().toString();
-                if(input != null && input.length() > 0){
+                if (input != null && input.length() > 0) {
                     lineUrl = input;
                     setText();
                 }
@@ -222,6 +222,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void preapprovedPay() {
+        orderId = String.valueOf(System.currentTimeMillis());
+        setText();
+        if (orderId == null) {
+            Toast.makeText(this, "請設定訂單編號", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         final PreapprovedPayApiRequest preapprovedPayApiRequest = new PreapprovedPayApiRequest(regKey, "吃吃吃吃吃", 1, "TWD", orderId);
         new Thread(new Runnable() {
             @Override
