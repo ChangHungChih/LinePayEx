@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LinePayEx</string>
+
+    <string name="linepay_confirm">Supported by Android/iPhone LINE versions 4.8.0 or higher.</string>
+    <string name="linepay_install">Get it now</string>
+    <string name="linepay_cancel">cancel</string>
+
+    <string name="linePaySandBoxDomain">https://sandbox-api-pay.line.me</string>
+    <string name="linePayDomain">https://api-pay.line.me</string>
+</resources>

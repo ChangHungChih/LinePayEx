@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etSetOrderId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnLineReserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="付錢囉" />
+
+
+    <Button
+        android:id="@+id/btnLaunchUri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="gotoUrl" />
+
+    <Button
+        android:id="@+id/btnLineRefund"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退錢囉" />
+
+    <Button
+        android:id="@+id/btnPaymentCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查詢" />
+
+    <Button
+        android:id="@+id/btnOneTimeKeyPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="掃碼付款"/>
+
+    <Button
+        android:id="@+id/btnStatusCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="掃碼單確認"/>
+
+    <Button
+        android:id="@+id/btnOneTimeKeyRefund"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="掃碼退款"/>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清除regKey"/>
+
+    <TextView
+        android:id="@+id/tvResult1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show something"/>
+
+    <TextView
+        android:id="@+id/tvPaymentCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show something"/>
+
+
+</LinearLayout>
