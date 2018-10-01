@@ -206,7 +206,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void launchUri(String uriString) {
         Uri uri = Uri.parse(uriString);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(intent);
         Log.wtf(TAG, "launchUri : " + uriString);
     }
