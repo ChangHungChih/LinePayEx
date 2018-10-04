@@ -103,13 +103,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnLineReserve:
-                checkRegKey(regKey);
-                if (regKey == null) {
-                    onReserveClick();
-                } else {
-                    preapprovedPay();
-                }
+//                checkRegKey(regKey);
+//                if (regKey == null) {
+//                    onReserveClick();
+//                } else {
+//                    preapprovedPay();
+//                }
 
+                onReserveClick();
                 break;
             case R.id.btnLaunchUri:
                 String input = etOrderId.getText().toString();
