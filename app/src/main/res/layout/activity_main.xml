@@ -8,10 +8,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!--<EditText-->
-        <!--android:id="@+id/etSetOrderId"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content" />-->
 
     <Button
         android:id="@+id/btnLineReserve"
@@ -32,6 +28,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etSetOrderId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/btnLineRefund"
