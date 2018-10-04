@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -37,41 +38,60 @@
         android:layout_height="wrap_content"
         android:text="查詢" />
 
-    <Button
-        android:id="@+id/btnOneTimeKeyPay"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="掃碼付款"/>
+        android:orientation="vertical"
+        android:visibility="gone">
 
-    <Button
-        android:id="@+id/btnStatusCheck"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="掃碼單確認"/>
+        <Button
+            android:id="@+id/btnOneTimeKeyPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="掃碼付款" />
 
-    <Button
-        android:id="@+id/btnOneTimeKeyRefund"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="掃碼退款"/>
+        <Button
+            android:id="@+id/btnStatusCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="掃碼單確認" />
 
-    <Button
-        android:id="@+id/btnClear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="清除regKey"/>
+        <Button
+            android:id="@+id/btnOneTimeKeyRefund"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="掃碼退款" />
 
-    <TextView
-        android:id="@+id/tvResult1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="show something"/>
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="清除regKey" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvPaymentCheck"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="show something"/>
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvResult1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="show something" />
+
+            <TextView
+                android:id="@+id/tvPaymentCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="show something" />
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>
